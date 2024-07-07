@@ -1,0 +1,438 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+/* navbar styling */
+/* Ensure your custom styles don't conflict with Bootstrap */
+body {
+  margin-top: 60px; /* Adjust for fixed navbar */
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.topic {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.card img {
+  height: 150px;
+  object-fit: contain;
+}
+
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #4070f4;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+/* home section styling */
+.home{
+  height: 100vh;
+  width: 100%;
+  background:#f7f7f7;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size: 25px;
+  color: #0E2431;
+}
+.home .text-two{
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.home .home-content .text .content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.home .home-content .text .left {
+  width: 50%;
+}
+
+.home .home-content .text .left p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #0E2431;
+  font-weight: 200;
+  margin-top: 0; /* Remove top margin to eliminate gap */
+}
+
+.home .home-content .text .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home .home-content .text .right img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  position: relative;
+  margin-right:10   0px;
+
+}
+/* Education Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+ .Education img{
+  height: 150px;
+  width: 200;
+  object-fit: cover;
+  display: block;
+ }
+section{
+  padding-top: 40px;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.Education .Education-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+.Education .Education-details.align-right {
+  justify-content: flex-end; 
+}
+
+.Education .Education-details:last-child {
+  margin-top: 40px; 
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Education .Education-details .left{
+  width: 30%;
+}
+
+.Education-details .right{
+  width: 60%;
+}
+section  .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.Education-details .right p{
+  text-align: justify;
+  color: #0E2431;
+  font-size: 17px;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+ /* My Skills CSS */
+ .skills {
+  background: #F0F8FF; /* Light blue background */
+  padding: 40px 0; /* Padding for content */
+}
+
+.skills .content {
+  width: 80%; /* Adjusted width for better responsiveness */
+  margin: 0 auto; /* Center align content */
+  font-family: 'Poppins', sans-serif; /* Optional: Font family */
+}
+
+.skills .title {
+  text-align: center; /* Center align the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.skills-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between skill categories */
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each category */
+}
+
+.front-end,
+.back-end,
+.operating,
+.design {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.topic {
+  font-size: 24px;
+  font-weight: bold;
+  flex: 0 0 150px; /* Fixed width for the title */
+  margin-right: 20px; /* Space between title and cards */
+}
+
+.cards {
+  display: flex;
+  gap: 10px; /* Space between cards */
+  margin-left: 40%;
+}
+
+.card img{
+
+  object-fit: contain;
+width: 130px;
+height: 130px;
+
+}
+
+.card {
+  height: 200px; /* Height for cards */
+  width: 205px; /* Width for cards */
+  margin: 10px; /* Margin between cards */
+  padding: 10px; /* Padding inside cards */
+  background: #fff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  align-items: center;
+  text-align: center;
+  display: flex; /* Added */
+  justify-content: center; /* Added */ /* Center align text */
+  flex-direction: column;
+  font-family:'Poppins', sans-serif ;
+  
+}
+
+.card p {
+  margin-top: 10px; /* Space above the text */
+  font-size: 16px; /* Font size for the text */
+  color: #333; /* Text color */
+}
+
+/* My projects CSS */
+.projects .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projects .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.projects .boxes .box:hover {
+  background: #4070f4;
+  color: #fff;
+}
+.projects .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon {
+  background-color: #fff;
+  color: #4070f4;
+}
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+
+/* Contact Me Section Styling */
+.contact .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.contact .topic,
+.contact .button {
+  display: flex;
+  align-items: center;
+}
+
+.contact .topic {
+  font-size: 1.2rem;
+  margin-right: 20px;
+  white-space: nowrap; 
+}
+
+.contact .button {
+  display: flex;
+  gap: 5px; 
+}
+
+.contact .button a {
+  margin-left: 10px;
+}
+
+
+.contact .button .btn {
+  margin: 0 10px;
+}
+
+.contact .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Footer CSS */
+footer{
+  background: #4070f4;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
